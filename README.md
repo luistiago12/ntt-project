@@ -13,6 +13,7 @@ O sistema recebe pedidos, realiza a gestão e cálculo do valor total dos produt
 - JPA/Hibernate
 - Banco de dados (PostgreSQL)
 - Kafka
+- Resilience4j
 
 ## Funcionalidades
 - Recebimento de pedidos do produto externo A
@@ -28,21 +29,7 @@ O sistema recebe pedidos, realiza a gestão e cálculo do valor total dos produt
 - `service`: Serviços para processar e calcular pedidos
 - `repository`: Repositórios JPA para armazenar pedidos
 - `model`: Modelos de dados para pedidos e produtos
-
-## Como Executar
-1. Clone o repositório:
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   ```
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd ntt
-   ```
-3. Configure o banco de dados no arquivo `application.properties`.
-4. Execute o projeto:
-   ```bash
-   ./mvnw spring-boot:run
-   ```
+- `listener`: Listeners para processar mensagens do Kafka
 
 ## Endpoints
 - `POST /api/orders`: Recebe um pedido do produto externo A
