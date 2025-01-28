@@ -14,12 +14,14 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.PrePersist;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Request {
     
     @Id

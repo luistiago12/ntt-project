@@ -46,3 +46,13 @@ O sistema recebe pedidos, realiza a gestão e cálculo do valor total dos produt
 - Verificação de duplicação de pedidos.
 - Garantia de disponibilidade do serviço com alta volumetria.
 - Consistência dos dados e concorrência.
+
+## Testes Unitários
+Os testes unitários foram implementados para garantir a qualidade e a funcionalidade do sistema. Utilizamos as seguintes tecnologias e frameworks para os testes:
+- JUnit
+- Mockito
+
+### Estrutura dos Testes
+- `controller`: Testes para os controladores REST
+- `service`: Testes para os serviços de processamento de pedidos
+- `repository`: Testes para os repositórios JPA

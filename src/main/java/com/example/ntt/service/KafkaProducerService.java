@@ -15,6 +15,11 @@ public class KafkaProducerService {
     private final KafkaTemplate<String, Request> kafkaTemplate;
     public final KafkaTemplate<String, String> stringKafkaTemplate;
 
+    public KafkaProducerService(KafkaTemplate<String, Request> kafkaTemplate) {
+        this.kafkaTemplate = kafkaTemplate;
+        this.stringKafkaTemplate = null;
+    }
+
     public KafkaProducerService(KafkaTemplate<String, Request> kafkaTemplate, KafkaTemplate<String, String> stringKafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
         this.stringKafkaTemplate = stringKafkaTemplate;
