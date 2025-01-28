@@ -19,8 +19,8 @@ public class TestConfig {
     }
 
     @Bean
-    public KafkaProducerService kafkaProducerService(KafkaTemplate<String, Request> kafkaTemplate) {
-        return new KafkaProducerService(kafkaTemplate);
+    public KafkaProducerService kafkaProducerService() {
+        return new KafkaProducerService();
     }
 
     @Bean
